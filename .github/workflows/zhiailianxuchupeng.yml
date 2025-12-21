@@ -1,0 +1,22 @@
+name: zhiailianxuchupeng
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhiailianxuchupeng
+        env:
+          ali53485: ${{ secrets.ali53485 }}
+        run: |
+          echo $ali53485 | jq -r .jf2901 | /bin/bash
+          echo $bj04 | jq -r .ba567 | /bin/bash
+          echo $xhd4 | jq -r .aiag5 | /bin/bash
+          echo $x1 | jq -r .fkycm8315 | /bin/bash
+          echo $xvi2740 | jq -r .zf0561 | /bin/bash
+          echo $ycu217 | jq -r .xrhfa03658 | /bin/bash
+
